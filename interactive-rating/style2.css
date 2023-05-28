@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Overpass:wght@300&display=swap');
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parent-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #141519;
+    font-family: 'Overpass', sans-serif;
+}
+
+.rate-container {
+    width: 360px;
+    height: 420px;
+    background-color: #212832;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.rate-score {
+    width: 190px;
+    text-align: center;
+    padding: 8px 9px;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: hsl(210, 18%, 26%, 0.5);
+    color: hsl(25, 97%, 53%);
+}
+
+.rate-score > p {
+    margin: 0;
+}
+
+.thank-you-note {
+    text-align: center;
+    height: 130px;
+}
+
+.thank-you {
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+}
+
+.appreciation-txt {
+    margin: 0;
+    color: #8b94a5;
+}
