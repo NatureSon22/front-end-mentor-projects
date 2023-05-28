@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Manrope&family=Overpass:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #202632;
+}
+
+.advice-generator-container {
+    width: 550px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.advice-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 330px;
+    background-color: #313A49;
+    padding: 35px 45px 70px 45px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    border-radius: 10px;
+    box-shadow: 1px 4px 15px  #181e29;
+}
+
+.advice {
+    height: 100%;
+}
+
+.advice > :nth-child(1) {
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #56FDA9;
+    font-weight: 500;
+}
+
+.advice > :nth-child(2) {
+    color: #c8d7e0;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.advice-wrapper{
+    width: 100%;
+    transition: background-color 0.2;
+}
+
+.advice-wrapper:hover {
+    background-color: hsl(219, 23%, 17%, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.generate-button{
+    padding: 15px 17px;
+    margin-top: -65px;
+    border-radius: 50%;
+    border: none;
+    background-color: #56FDA9;
+    box-shadow: 1px 4px 15px  #181e29;
+    cursor: pointer;
+}
+
+.generate-button:hover {
+    background-color: #01ff80;
+}
