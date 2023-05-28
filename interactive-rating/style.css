@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Overpass:wght@300&display=swap');
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parent-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #141519;
+    font-family: 'Overpass', sans-serif;
+}
+
+.rate-container {
+    width: 360px;
+    height: 420px;
+    background-color: #212832;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 10px 40px;
+}
+
+.star-container {
+    width: 50px;
+    height: 50px;
+    background-color: #262f38;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.star-container > img {
+    width: 20px;
+}
+
+.remark-rate > p{
+    text-align: left;
+    color: hsl(217, 12%, 63%);
+}
+
+.intro-ques {
+    font-size: 35px;
+    font-weight: 700;
+    color: white !important;
+    margin: 0;
+}
+
+.rate-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate-btn {
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-family: inherit;
+    background-color: hsl(210, 18%, 26%, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    font-weight: bold;
+    transition: background-color 0.1s, color 0.2s;
+    cursor: pointer;
+}
+
+.rate-btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.rate-btn-active {
+    background-color: #7a8291;
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 2px;
+    padding: 12px 0;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.flicker-btn {
+    background-color: #697f9c;
+    color: black
+}
+
+
+
+
