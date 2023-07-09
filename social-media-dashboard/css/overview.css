@@ -1,0 +1,77 @@
+.subtitle {
+    color: var(--font-white);
+    font-family: var(--inter-font);
+    margin: 50px 0 25px;
+}
+
+.overview-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 35px
+}
+
+.overview-board__card {
+    flex: 1;
+    background-color: var(--background-card);
+    border-radius: 5px;
+    padding: 30px 30px 22px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    min-width: 250px;
+}
+
+.overview-board__card:hover {
+    background-color: var(--hover-color);
+}
+
+.overview-board__card-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.overview-board__card-social > p {
+    font-family: var(--inter-font);
+    font-size: 0.79rem;
+    font-weight: 900;
+    color: var(--font-desaturated-blue);
+}
+
+.overview-board__card-rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.overview-board__card-rate > h2{
+    color: var(--font-white);
+    font-family: var(--inter-font);
+    font-size: 1.8rem;
+}
+
+.overview-board__card-rate-percent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.overview-board__card-rate-percent {
+    font-family: var(--inter-font);
+    color: hsl(163, 72%, 41%);
+    font-weight: 900;
+    font-size: 0.73rem;
+}
+
+.overview-board__card:nth-child(2) .overview-board__card-rate-percent > p {
+    color: hsl(356, 69%, 56%);
+}
+
+.overview-board__card:nth-child(7) .overview-board__card-rate-percent > p {
+    color: hsl(356, 69%, 56%);
+}
+
+.overview-board__card:nth-child(8) .overview-board__card-rate-percent > p {
+    color: hsl(356, 69%, 56%);
+}
