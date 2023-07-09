@@ -1,0 +1,60 @@
+.title-board__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-board__title > h1 {
+    font-family: var(--inter-font);
+    color: var(--font-white);
+    font-weight: 600;
+}
+
+.title-board__title > div > h5 {
+    color: var(--font-desaturated-blue);
+    font-family: var(--inter-font);
+    word-spacing: 2px;
+}
+
+.title-board__title-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.title-board__title-toggle-container {
+    width: 60px;
+    height: 27px;
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 20px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.title-board__title-toggle-circle {
+    background-color: hsl(230, 17%, 14%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.title-board__title-toggle-circle.active {
+    transform: translateX(32px);
+}
+
+.total-followers {
+    color: var(--font-desaturated-blue);
+    font-family: var(--inter-font);
+    margin-top: 7px;
+    font-size: 14px;
+}
+  
+
+@media screen and (max-width: 320px) and (max-height: 480px) {
+    .title-board__title-toggle-circle.active {
+        transform: translateX(16px);
+    }
+}
