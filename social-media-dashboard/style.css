@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Carme&family=Concert+One&family=Erica+One&family=Happy+Monkey&family=Inter:wght@500&family=Karla:wght@500;800&family=Kodchasan:wght@600&family=Montserrat+Subrayada&family=Montserrat:wght@300;400;600;800&family=Nerko+One&family=Noto+Sans+JP:wght@900&family=Nunito&family=Orbitron:wght@600&family=PT+Sans&family=Play:wght@700&family=Poppins:wght@500;600;800&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,600&family=Roboto+Mono&family=Roboto:wght@400;500&family=Rubik+Mono+One&family=Rubik+Vinyl&family=Russo+One&family=Signika:wght@700&family=Space+Mono:wght@700&family=Varela+Round&display=swap');
+
+@import url(css/title-board.css);
+@import url(css/social-board.css);
+@import url(css/overview.css);
+
+:root {
+  --inter-font: 'Inter', sans-serif;
+  --font-white: hsl(0, 0%, 100%);
+  --font-desaturated-blue: hsl(228, 34%, 66%);
+  --background-card: hsl(228, 28%, 20%);
+  --primary-background: hsl(230, 17%, 14%);
+  --hover-color: #333a56;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-background);
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  height: 100vh;
+  transition: background-color 0.9s;
+}
+
+.wrapper {
+  width: 1350px;
+}
