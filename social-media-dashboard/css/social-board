@@ -1,0 +1,94 @@
+.social-board {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.social-board__card {
+    background-color: var(--background-card);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 30px 0px 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.social-board__card:hover {
+    background-color: var(--hover-color);
+}
+
+.social-board__card:nth-child(1) {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.social-board__card:nth-child(2) {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.social-board__card:nth-child(3) {
+    border-top: 5px solid  hsl(37, 97%, 70%);
+}
+
+.social-board__card:nth-child(4) {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.social-board__card-app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-board__card-app > p {
+    font-family: var(--inter-font);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--font-desaturated-blue);
+    font-family: var(--inter-font);
+}
+
+.social-board__card-followers {
+    font-size: 3.5rem;
+    font-weight: 1000;
+    font-family: var(--inter-font);
+    color: var(--font-white);
+}
+
+.social-board__card-subtitle {
+    color: var(--font-desaturated-blue);
+    font-family: var(--inter-font);
+    font-weight: lighter;
+    font-size: 0.75rem;
+    letter-spacing: 7px;
+}
+
+.social-board__card-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.social-board__card-status > p {
+    color: hsl(163, 72%, 41%);
+    font-family: var(--inter-font);
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+
+.social-board__card:nth-child(4) .social-board__card-status > p {
+    color: hsl(356, 69%, 56%);
+    font-family: var(--inter-font);
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+  
