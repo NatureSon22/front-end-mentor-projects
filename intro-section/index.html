@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-query.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <section class="overlay"></section>
+  <section class="sidebar">
+    <img class="close-icon" src="images/icon-close-menu.svg" alt="close-icon"/>
+    <section class="sidebar__container">
+      <ul>
+        <li class="sidebar__container-feature">
+          <div>
+            <p>Features</p>
+            <i class="fa-solid fa-angle-up" id="feature-sidebar"></i>
+          </div>  
+          <ul class="feature-sidebar-tab">
+            <li>
+              <div><img src="images/icon-todo.svg" alt="todo-icon"/></div>
+              <p>Todo List</p>
+            </li>
+            <li>
+              <div><img src="images/icon-calendar.svg" alt="calendar-icon"/></div>
+              <p>Calendar</p>
+            </li>
+            <li>
+              <div><img src="images/icon-reminders.svg" alt="reminders-icon"/></div>
+              <p>Reminders</p>
+            </li>
+            <li>
+              <div><img src="images/icon-planning.svg" alt="planning-icon"/></div>
+              <p>Planning</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="sidebar__container-company">
+          <div>
+            <p>Company</p>
+            <i class="fa-solid fa-angle-up" id="company-sidebar"></i>
+          </div>
+          <ul class="company-sidebar-tab">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <section class="sidebar__container-buttons">
+        <button>Login</button>
+        <button>Register</button>
+      </section>
+    </section>
+  </section>
+  </div>
+  <section class="container">
+    <section class="navigation-bar">
+      <div class="navigation-bar__navigation">
+        <h1>snap</h1>
+        <ul class="navigation-bar__navigation-menu">
+          <li>
+            <div class="navigation-menu-drop" id="feature-btn">
+              <p>Features</p>
+              <i class="fa-solid fa-angle-up" id="feature-arrow"></i>
+            </div>
+            <div class="feature-tab" id="feature-tab">
+              <ul>
+                <li><div><img src="images/icon-todo.svg" alt="todo-icon"/></div>Todo List</li>
+                <li><div><img src="images/icon-calendar.svg" alt="calendar-icon"/></div>Calendar</li>
+                <li><div><img src="images/icon-reminders.svg" alt="reminders-icon"/></div>Reminders</li>
+                <li><div><img src="images/icon-planning.svg" alt="planning-icon"/></div>Planning</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="navigation-menu-drop" id="company-btn">
+              <p>Company</i></p>
+              <i class="fa-solid fa-angle-up" id="company-arrow"></i>
+            </div>
+            <div class="company-tab" id="company-tab">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+
+      <div class="navigation-bar__login">
+        <button>Login</button>
+        <button>Register</button>
+        <img src="images/icon-menu.svg" id="sidebar"/>
+      </div>
+    </section>
+
+    <section class="main-content">
+      <article class="main-content__content">
+        <h1 id="content-motto">Make <br /> remote work</h1>
+
+        <div class="main-content__content-motto">
+          <p>
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <div>
+            <button>Learn more</button>
+          </div>
+        </div>
+
+        <div class="main-content__content-sponsor">
+          <img src="images/client-databiz.svg" alt="client-databiz"/>
+          <img src="images/client-audiophile.svg" alt="client-audiophile"/>
+          <img src="images/client-meet.svg" alt="client-meet"/>
+          <img src="images/client-maker.svg" alt="client-maker"/>
+        </div>
+      </article>
+      <img class="main-content__graphic" src="images/image-hero-desktop.png" alt="graphic-desktop"/>
+    </section>
+  </section>
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/ce744f4aea.js" crossorigin="anonymous"></script>
+</body>
+</html>
