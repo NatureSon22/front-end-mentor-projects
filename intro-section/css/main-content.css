@@ -1,0 +1,57 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+    margin: 3rem auto 1rem;
+    padding-left: 6em;
+}
+
+.main-content__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 7em;
+    width: 50%;
+}
+
+.main-content__content > h1 {
+    font-size: 6rem;
+}
+
+.main-content__graphic {
+    width: 35em;
+}
+
+.main-content__content-motto {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 70%;
+    color: var(--color-gray);
+    font-weight: 200;
+    padding-bottom: 5em;
+}
+
+.main-content__content-motto > p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+
+.main-content__content-motto > div > button {
+    font-size: 1.2em;
+    padding: 0.7em 2em;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: none;
+    outline: none;
+    border-radius: 0.7em;
+    cursor: pointer;
+}
+
+.main-content__content-sponsor {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 75%;
+}
