@@ -1,0 +1,28 @@
+@import url(css/sidebar.css);
+@import url(css/navigation-bar.css);
+@import url(css/main-content.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200&family=Epilogue:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-epilogue: 'Epilogue', sans-serif;
+
+  --color-white: hsl(0, 0%, 98%);
+  --color-gray: hsl(0, 0%, 41%);
+  --color-black: hsl(0, 0%, 8%)
+}
+
+.container {
+  height: 100vh;
+  font-family: var(--font-epilogue);
+}
+
+li {
+  list-style: none;
+}
