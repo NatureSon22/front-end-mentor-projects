@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ce744f4aea.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <script src="script.js" defer></script>
+  <section class="container">
+    <section class="age-calculator">
+        <section class="age-calculator__input">
+            <div class="age-calculator__input-container">
+                <p class="category">DAY</p>
+                <input type="text" class="input-field" placeholder="DD" />
+                <p class="input-error">This field is required</p>    
+            </div>
+            <div class="age-calculator__input-container">
+                <p class="category">MONTH</p>
+                <input type="text" class="input-field" placeholder="MM" />
+                <p class="input-error">This field is required</p> 
+            </div>
+            <div class="age-calculator__input-container">
+                <p class="category">YEAR</p>
+                <input type="text" class="input-field" placeholder="YYYY" />
+                <p class="input-error">This field is required</p>
+            </div>
+        </section>
+
+        <section class="age-calculator__button">
+            <div><hr></div>
+            <button class="compute-btn" id="compute-btn"><img src="assets/images/icon-arrow.svg" alt="arrow icon"></button>
+        </section>
+
+        <section class="age-calculator__age-result">
+          <h1><div><span class="age">--</span></div>years</h1>
+          <h1><div><span class="age">--</span></div>months</h1>
+          <h1><div><span class="age">--</span></div>days</h1>
+        </section>
+    </section>
+  </section>
+</body>
+</html>
