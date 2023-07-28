@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <script src="index.mjs" defer></script>
+  <section class="container">
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+    <main>
+      <section class="newsletter">
+        <div class="newsletter__image">
+          <img id="newsletter__image-bg" src="assets/images/illustration-sign-up-desktop.svg" />
+        </div>
+        <div class="newsletter__form">
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="newsletter__form-goal">
+            <li>
+              <div>
+                <img src="assets/images/icon-success.svg" />
+                <p>Product discovery and building what matters</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/images/icon-success.svg" />
+                <p>Measuring to ensure updates are a success</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/images/icon-success.svg" />
+                <p>And much more!</p>
+              </div>
+            </li>
+          </ul>
+
+          <section class="newsletter__form-email">
+            <div>
+              <h4>Email address</h4>
+              <h4 id="error-label">Valid email required</h4>
+            </div>
+            <input type="text" id="input-field" placeholder="email@company.com">
+            <button id="submit-btn"><h4>Subscribe to monthly newsletter</h4></button>
+          </section>
+        </div>
+        <div></div>
+      </section>
+    </main>
+  </section>
+</body>
+</html>
