@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --clr-primary-100: hsl(234, 29%, 20%);
+    --clr-primary-200: hsl(0, 0%, 100%);
+    --clr-secondary-100: hsl(235, 18%, 26%); 
+    --clr-secondary-200: hsl(231, 7%, 60%); 
+
+    --ff-roboto: 'Roboto', sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-100);
+    font-family: var(--ff-roboto);
+}
+
+.success-page {
+    height: 78%;
+    max-width: 30em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 9rem 2rem 2rem 2rem;
+}
+
+.success-page__content > img {
+    width: 3rem;
+}
+
+h4 {
+    display: inline;
+}
+
+.success-page__content > h1 {
+    margin-block: 1em;
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+.success-page__button {
+   margin-top: auto;
+   background-color: var(--clr-primary-100);
+   padding: 1em;
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: var(--clr-primary-200);
+   cursor: pointer;
+   border-radius: 10px;
+   margin-bottom: 0.8em;
+   border: none;   
+}
+
+.success-page__button:hover {
+    background: linear-gradient(to right, #ff537b, #fd5a66, #ff6151, #fe693c);
+    box-shadow: 0 20px 10px hsla(346, 100%, 66%, 0.3);
+}
+
+
+@media (min-width: 490px){
+    .success-page {
+        height: 24em;
+        padding: 3em 3em;
+        border-radius: 20px;
+        max-width: 20em;
+    }
+
+    .success-page__content > h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-block: 0.5999em;
+    }
+
+}
