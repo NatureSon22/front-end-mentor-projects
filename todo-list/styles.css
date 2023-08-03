@@ -1,0 +1,287 @@
+:root {
+    --clr-main-bg: hsl(235, 21%, 11%);
+    --clr-container-bg: hsl(235, 24%, 19%);
+    --clr-container-unchecked: hsl(233, 14%, 35%);
+    --clr-container-checked: hsl(237, 14%, 26%);
+    --clr-font:  hsl(234, 39%, 85%);
+    --clr-font-hover: hsl(236, 33%, 92%);
+    --clr-button-checked: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    --clr-box-color: rgba(19, 19, 27, 0.9); 
+    --clr-box-color: rgba(17, 17, 26, 0.4) 0px 8px 24px, rgba(17, 17, 26, 0.2) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    
+    --ff-josefin: 'Josefin Sans', sans-serif;
+
+    --bg-mobile: url(images/bg-mobile-dark.jpg);
+    --bg-desktop: url(images/bg-desktop-dark.jpg);
+}
+
+.light-mode {
+    --clr-main-bg: white;
+    --clr-container-bg: white;
+    --clr-box-color: hsla(233, 16%, 89%, 0.5);
+    --clr-font: hsl(235, 19%, 35%);
+    --clr-font-hover: hsl(235, 19%, 35%);
+    --clr-container-checked: hsl(236, 33%, 92%);
+    --clr-container-unchecked: hsl(236, 9%, 61%);
+    --clr-box-color: rgba(148, 148, 182, 0.4) 0px 8px 24px, rgba(228, 228, 231, 0.2) 0px 16px 56px, rgba(163, 163, 172, 0.19) 0px 24px 80px;
+
+    --bg-mobile: url(images/bg-mobile-light.jpg);
+    --bg-desktop: url(images/bg-desktop-light.jpg);
+}  
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-main-bg);
+    padding-top: 2.5em;
+    transition: all 0.18s;
+}
+
+.main-bg {
+    background-image: var(--bg-mobile);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 12.5em;
+}
+
+.todolist {
+    display: flex;
+    flex-direction: column;
+    width: min(85%, 40em);
+    max-height: 45em;
+    z-index: 1;
+    color: white;
+    font-family: var(--ff-josefin);
+    position: relative;
+}
+
+.todolist__container--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2em;
+}
+
+.todolist__container--header > h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.todolist__container--header > img {
+    cursor: pointer;
+    width: 1.6rem;
+    z-index: 2;
+    
+}
+
+.todolist__container--header > img.active {
+    content: url(images/icon-moon.svg);
+}
+
+.todolist__container--input {
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--clr-container-bg);
+    color: var(--clr-font-hover);
+    margin-bottom: 1.5em;
+    outline: none;
+    box-shadow: var(--clr-box-color);
+}
+
+.todolist__container--subcontainer {
+    box-shadow: var(--clr-box-color)
+}
+
+.todolist__container--subcontainer-todo {
+    overflow-y: scroll;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 25em;
+}
+
+.todolist__container--subcontainer-todo > * {
+    border-bottom: 1px solid var(--clr-container-checked);
+}
+
+.todo {
+    display: flex;
+    word-wrap: break-word;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    padding: 1rem;
+    color: var(--clr-font);
+    cursor: pointer;
+    background-color: var(--clr-container-bg);
+    transition: all 0.3s ease-out;
+}
+
+.todo > p.active {
+    text-decoration-line: line-through;
+    color:  hsl(233, 24%, 64%);
+}
+
+.todo-contain {
+    transition: all 0.3s ease-out;
+}
+
+.delete {
+    transform: scale(0);
+}
+
+.box {
+    background-color: var(--clr-box-color);
+}
+
+.todo__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--clr-container-unchecked);
+    padding: 0.45em 0.35em;
+    border-radius: 50%;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: border-color 0.18s;
+}
+
+.todo__check:hover {
+    border-color: color-mix(in srgb, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todo__check.active {
+    background: var(--clr-button-checked);
+}
+
+.todo__check > img {
+    visibility: hidden;
+}
+
+.todo__check > img.active {
+    visibility: visible;
+}
+
+.todo > img {
+    margin-left: auto;
+    width: 1.45em;
+    cursor: pointer;
+}
+
+.todolist__container--subcontainer-filter {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--clr-container-bg);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid var(--clr-container-checked);
+    padding: 1rem;
+}
+
+.todolist__container--subcontainer-filter > h5 {
+    color: var(--clr-container-unchecked);
+    transition: color 0.18s;
+}
+
+.todolist__container--subcontainer-filter > h5:nth-child(3) {
+    cursor: pointer;
+}
+
+.todolist__container--subcontainer-filter > h5:nth-child(3):hover {
+    color: var(--clr-font-hover);
+}
+
+.todolist__container--subcontainer-filter > div {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    top: 4.5em;
+    width: 100%;
+    left: 0;
+    background-color: var(--clr-container-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--clr-container-unchecked);
+    box-shadow: var(--clr-box-color);
+}
+
+.todolist__container--subcontainer-filter > div > h5 {
+    cursor: pointer;
+    transition: color 0.18s;
+}
+
+.todolist__container--subcontainer-filter > div > h5:hover {
+    color: var(--clr-font-hover);
+}
+
+.todolist__container--subcontainer-filter > div > h5.active {
+    color: hsl(220, 98%, 61%);
+}
+
+.todolist__container--text {
+   margin: auto auto 0;
+   color: var(--clr-container-unchecked);
+}
+
+.grabbing {
+    border: 1px solid hsla(220, 98%, 61%, 0.5);
+    width: clamp(13em, 20%, 17em);
+    opacity: 0.9;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--ff-josefin);
+}
+
+
+@media (min-width: 720px) {
+    .main-bg {
+        background-image: var(--bg-desktop);
+        padding-block: min(10em);
+    }
+
+    .todolist {
+        margin-top: 5%;
+        padding-bottom: 2rem;
+    }
+
+    .todo {
+        font-size: 1rem;
+    }
+
+    .todolist__container--subcontainer-filter > div{
+        position: relative;
+        width: auto;
+        top: 0;
+        padding: 0;
+    }
+}
+
+
+
+
