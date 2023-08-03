@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200&family=Epilogue:wght@500&family=Josefin+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Playfair+Display:wght@600;900&family=Poppins:ital,wght@0,400;1,900&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <section class="container">
+    <div class="main-bg"></div>
+    <main class="todolist">
+      <section class="todolist__container">
+
+        <!-- header -->
+        <header class="todolist__container--header" data-aos="fade-right">
+          <h1>todo</h1>
+          <img id="toggle-btn" src="images/icon-sun.svg" alt="" />
+        </header>
+
+        <!-- input -->
+        <input id="input-field" type="text" class="todolist__container--input" placeholder="Create a new todo..." data-aos="fade-right"/>
+
+        <!-- container -->
+        <section class="todolist__container--subcontainer" data-aos="fade-left">
+          <section class="todolist__container--subcontainer-todo box">
+
+            <!-- subcontainer -->
+          </section>
+          <section class="todolist__container--subcontainer-filter">
+            <h5><span>5</span> items left</h5>
+            <div class="todo-filter">
+              <h5 class="active">All</h5>
+              <h5>Active</h5>
+              <h5>Completed</h5>
+            </div>
+            <h5 id="clear-all">Clear completed</h5>
+          </section>
+        </section>
+      </section>
+      <h5 class="todolist__container--text">Drag and drop to reorder list</h5>
+    </main>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js" defer></script>
+</html>
