@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200;300;400;600;800&family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800;6..12,1000&family=Playfair+Display:wght@600;900&family=Poppins:ital,wght@0,200;0,400;0,600;1,900&family=Roboto:ital,wght@1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  <div class="wrapper">
+    <main class="page">
+      <div class="side-effect"></div>
+
+      <aside>
+        <nav class="page-header">
+          <img src="assets/images/icon-menu-close.svg" alt="">
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <header>
+        <img src="assets/images/logo.svg" alt="">
+        <nav class="page-header">
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+
+        <img class="hamburger" src="assets/images/icon-menu.svg" alt="">
+      </header>
+
+      <section class="page-body">
+        <section class="page-body__hero">
+          <picture>
+            <source media="(min-width: 1000px)" srcset="assets/images/image-web-3-desktop.jpg">
+            <img src="assets/images/image-web-3-mobile.jpg" alt="">
+          </picture>
+
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div>
+            <p class="text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <button>read more</button>
+          </div>
+        </section>
+
+        <section class="page-body__new-article">
+          <h2>New</h2>
+          <div>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p class="text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div>
+            <h3>The Downsides of AI Artistry</h3>
+            <p class="text">What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p class="text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </section>
+
+        <section class="page-body__top-article">
+          <div class="page-body__top-article--flex">
+            <img src="assets/images/image-retro-pcs.jpg" alt="an old pc">
+            <div>
+              <h2>01</h2>
+              <h3> Reviving Retro PCs</h3>
+              <p class="text">What happens when old PCs are given modern upgrades?  </p>          
+            </div>
+          </div>
+
+          <div class="page-body__top-article--flex">
+            <img src="assets/images/image-top-laptops.jpg" alt="a keyboard">
+            <div>
+              <h2>02</h2>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p class="text">Our best picks for various needs and budgets.</p>          
+            </div>
+          </div>
+
+          <div class="page-body__top-article--flex">
+            <img src="assets/images/image-gaming-growth.jpg" alt=" aconsole floating on a hand">
+            <div>
+              <h2>03</h2>
+              <h3>The Growth of Gaming</h3>
+              <p class="text">How the pandemic has sparked fresh opportunities.</p>          
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
