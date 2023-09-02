@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200;300;400;600;800&family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800;6..12,1000&family=Playfair+Display:wght@600;900&family=Poppins:wght@500;700&family=Roboto:ital,wght@1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <div class="wrapper">
+    <img class="box-element" src="images/illustration-box-desktop.svg" alt="">
+    <main class="accordion">
+      <section class="accordion__graphic accordion--pad">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images\illustration-woman-online-desktop.svg">
+          <img src="images/illustration-woman-online-mobile.svg" alt="">
+        </picture>
+      </section>
+
+      <section class="accordion__container accordion--pad">
+        <h1>FAQ</h1>
+
+        <section class="accordion__box">
+          <div>
+            <p>How many team members can I invite?</p>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div>
+            <p class="accordion__info">
+              You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+            </p>
+          </div>
+        </section>
+
+        <section class="accordion__box">
+          <div>
+            <p>What is the maximum file upload size?</p>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div>
+            <p>
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+        </section>
+
+        <section class="accordion__box">
+          <div>
+            <p> How do I reset my password?</p>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div>
+            <p>
+              Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+        </section>
+
+        <section class="accordion__box">
+          <div>
+            <p>Can I cancel my subscription?</p>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div>
+            <p>
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </div>
+        </section>
+
+        <section class="accordion__box">
+          <div>
+            <p>Do you provide additional support?</p>
+            <img src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div>
+            <p>
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
