@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive comments section</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200;300;400;600;800&family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800;6..12,1000&family=Patrick+Hand&family=Playfair+Display:wght@600;900&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <main class="container">
+      <section class="comment-section">
+        <section class="comment-section__tab">
+          <!-- container for the user comment -->
+          <section class="comment-section__container">
+            <div class="comment-section__container-vote">
+              <img src="images/icon-plus.svg" alt="">
+              <p class="comment-section__container-number">12</p>
+              <img src="images/icon-minus.svg" alt="">
+            </div>
+
+            <div class="comment-section__container-comment">
+              <div class="comment-section__container-profile">
+                <img src="images/avatars/image-amyrobson.png" alt="">
+                <p>amyrobson</p>
+                <p>1 month ago</p>
+              </div>
+
+              <p class="comment-section__container-main-comment">
+                Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+              </p>
+            </div>
+
+            <div class="comment-section__container-option">
+              <div class="comment-section__container-reply">
+                <img src="images/icon-reply.svg" alt="">
+                <p>Reply</p>
+              </div>
+
+              <div class="comment-section__container-delete">
+                <img src="images/icon-delete.svg" alt="">
+                <p>Delete</p>
+              </div>
+
+              <div class="comment-section__container-edit">
+                <img src="images/icon-edit.svg" alt="">
+                <p>Edit</p>
+              </div>
+            </div>
+          </section>
+          <!-- container for the replies -->
+
+          <section class="replies-section__container">
+            <section class="comment-container comment">
+              <img src="images/avatars/image-juliusomo.png" alt="profile picture of the user">
+              <textarea class="comment-bar" placeholder="Add a comment..."></textarea>
+              <button class="reply-btn">REPLY</button>
+              <button id="update-btn">UPDATE</button>
+            </section>
+          </section>
+        </section> 
+
+        <section class="comment-section__tab">
+          <!-- container for the user comment -->
+          <section class="comment-section__container">
+            <div class="comment-section__container-vote">
+              <img src="images/icon-plus.svg" alt="">
+              <p class="comment-section__container-number">12</p>
+              <img src="images/icon-minus.svg" alt="">
+            </div>
+
+            <div class="comment-section__container-comment">
+              <div class="comment-section__container-profile">
+                <img src="images/avatars/image-maxblagun.png" alt="">
+                <p>maxblagun</p>
+                <p>2 weeks ago</p>
+              </div>
+
+              <p class="comment-section__container-main-comment">
+                Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+              </p>
+            </div>
+
+            <div class="comment-section__container-option">
+              <div class="comment-section__container-reply">
+                <img src="images/icon-reply.svg" alt="">
+                <p>Reply</p>
+              </div>
+
+              <div class="comment-section__container-delete">
+                <img src="images/icon-delete.svg" alt="">
+                <p>Delete</p>
+              </div>
+
+              <div class="comment-section__container-edit">
+                <img src="images/icon-edit.svg" alt="">
+                <p>Edit</p>
+              </div>
+            </div>
+
+          </section>
+          <!-- container for the replies -->
+          <section class="replies-section__container active">
+            <!-- container for the user comment -->
+            <!-- ramsesmiron -->
+            <section class="comment-section__container">
+              <div class="comment-section__container-vote">
+                <img src="images/icon-plus.svg" alt="">
+                <p class="comment-section__container-number">12</p>
+                <img src="images/icon-minus.svg" alt="">
+              </div>
+
+              <div class="comment-section__container-comment">
+                <div class="comment-section__container-profile">
+                  <img src="images/avatars/image-ramsesmiron.png" alt="">
+                  <p>ramsesmiron</p>
+                  <p>1 week ago</p>
+                </div>
+
+                <p class="comment-section__container-main-comment">
+                  If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+                </p>
+              </div>
+
+              <div class="comment-section__container-option">
+                <div class="comment-section__container-reply">
+                  <img src="images/icon-reply.svg" alt="">
+                  <p>Reply</p>
+                </div>
+
+                <div class="comment-section__container-delete">
+                  <img src="images/icon-delete.svg" alt="">
+                  <p>Delete</p>
+                </div>
+
+                <div class="comment-section__container-edit">
+                  <img src="images/icon-edit.svg" alt="">
+                  <p>Edit</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- container for the user comment -->
+            <!-- juliusomo -->
+            <section class="comment-section__container">
+              <div class="comment-section__container-vote">
+                <img src="images/icon-plus.svg" alt="">
+                <p class="comment-section__container-number">12</p>
+                <img src="images/icon-minus.svg" alt="">
+              </div>
+
+              <div class="comment-section__container-comment">
+                <div class="comment-section__container-profile ">
+                  <img src="images/avatars/image-juliusomo.png" alt="">
+                  <p>juliusomo</p>
+                  <p class="reply-tag active">you</p>
+                  <p>2 days ago</p>
+                </div>
+
+                <p class="comment-section__container-main-comment">
+                  <span>@ramsesmiron</span>
+                  I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+                </p>
+              </div>
+
+              <div class="comment-section__container-option active">
+                <div class="comment-section__container-reply">
+                  <img src="images/icon-reply.svg" alt="">
+                  <p>Reply</p>
+                </div>
+
+                <div class="comment-section__container-delete">
+                  <img src="images/icon-delete.svg" alt="">
+                  <p>Delete</p>
+                </div>
+
+                <div class="comment-section__container-edit">
+                  <img src="images/icon-edit.svg" alt="">
+                  <p>Edit</p>
+                </div>
+              </div>
+            </section>   
+            <section class="comment-container comment">
+              <img src="images/avatars/image-juliusomo.png" alt="profile picture of the user">
+              <textarea class="comment-bar" placeholder="Add a comment..."></textarea>
+              <button class="reply-btn">REPLY</button>
+              <button id="update-btn">UPDATE</button>
+            </section>       
+          </section>
+        </section>
+      </section>
+
+      <section class="comment-container main">
+        <img src="images/avatars/image-juliusomo.png" alt="profile picture of the user">
+        <textarea class="comment-bar" placeholder="Add a comment..."></textarea>
+        <button>Send</button>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
