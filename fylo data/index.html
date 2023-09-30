@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200;300;400;600;800&family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700;800&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,800&family=Open+Sans:wght@400;500&family=Patrick+Hand&family=Playfair+Display:wght@600;900&family=Poppins:wght@400;500;700&family=Raleway:wght@400;700&family=Roboto:ital,wght@1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js" defer></script>
+  <div class="container page-flex">
+    <section class="container-submit">
+      <img src="images/logo.svg" alt="">
+
+      <div class="container-submit__field page-flex">
+        <div class="page-flex">
+          <input type="file" id="document-input"/>
+          <label for="document-input"><img src="images/icon-document.svg" alt=""></label>
+        </div>
+
+        <div class="page-flex">
+          <input type="file" id="folder-input" multiple />
+          <label for="folder-input"><img src="images/icon-folder.svg" alt=""></label>
+        </div>
+
+        <div class="page-flex">
+          <input type="file" id="link-input"/>
+          <label for="link-input"><img src="images/icon-upload.svg" alt=""></label>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container-data">
+      <div class="container-data__gb page-flex">
+        <p class="mb gb">1000</p>
+        <p>mb left</p> 
+      </div>
+
+      <div class="container-data__visual page-flex">
+        <p>You've used <span class="used-mb">0 MB</span> of your storage</p>
+        
+        <div class="container-data__bar">
+          <div class="container-data__loader">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="container-data__data page-flex">
+          <p>0 MB</p>
+          <p>1000 MB</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
