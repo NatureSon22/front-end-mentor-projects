@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;900&family=Barlow:wght@200;300;400;600;800&family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700;800&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,800&family=Open+Sans:wght@400;500&family=Patrick+Hand&family=Playfair+Display:wght@600;900&family=Poppins:wght@400;500;700&family=Raleway:wght@400;700&family=Roboto:ital,wght@1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ce744f4aea.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div class="wrapper page-flex">
+    <div class="img-effect page-grid">
+      <div class="img-effect__container page-flex">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="img-effect__main-img">
+          <img src="images/image-product-1.jpg" alt="">
+          <div class="button-left-effect page-flex"><img src="images/icon-previous.svg" alt=""></div>
+          <div class="button-right-effect page-flex"><img src="images/icon-next.svg" alt=""></div>
+        </div>
+        <div class="img-effect__main-list page-flex">
+          <div><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toggle-effect">
+      <div class="effect">
+        <img class="exit" src="images/icon-close.svg" alt="">
+        <nav>
+          <ul class="page-grid">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bg-effect"></div>
+    </div>
+    <div class="container">
+      <!-- header -->
+      <header class="page-header page-flex">
+        <!-- navigation -->
+        <div class="page-header__nav page-flex">
+          <div class="page-flex">
+            <img  class ="menu-burger" src="images/icon-menu.svg" alt="">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <nav>
+            <ul class="page-flex">
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <!-- profile -->
+        <div class="page-header__user page-flex">
+          <div class="page-header__user__cart">
+            <img src="images/icon-cart.svg" alt="">
+          </div>
+
+          <div class="page-header__user__profile">
+            <img src="images/image-avatar.png" alt="">
+          </div>
+        </div>
+        <!-- cart -->
+        <div class="page-header__cart page-flex">
+          <p>Cart</p>
+          <hr>
+          <p class="empty-item">Your cart is empty.</p>
+        </div>
+      </header>
+
+      <!-- product -->
+      <section class="page-product page-grid">
+        <div class="page-product__images page-flex">
+          <!-- image product -->
+          <div class="page-product__main__image">
+            <img src="images/image-product-1.jpg" alt="">
+            <div class="button-left page-flex"><img src="images/icon-previous.svg" alt=""></div>
+            <div class="button-right page-flex"><img src="images/icon-next.svg" alt=""></div>
+          </div>
+
+          <div class="page-product__list__image">
+            <div><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+            <div><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+            <div><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+            <div><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <!-- price product -->
+        <section class="page-product__price page-grid">
+          <p class="title">sneaker company</p>
+          <p class="title__accent">Fall Limited Edition Sneakers</p>
+          <p class="title__accent2">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+
+          <div class="page-product__actual__price  page-flex">
+            <div class="page-flex">
+              <p class="price">$125.00</p>
+              <div class="price-off">
+                <p>50%</p>
+              </div>
+            </div>
+            <p class="price-before">$250.00</p>
+          </div>
+
+          <div class="page-product__price__quantity page-flex">
+            <div class="page-flex">
+              <div class="page-flex subtract"><img src="images/icon-minus.svg" alt=""></div>
+              <p class="num-item">0</p>
+              <div class="page-flex add"><img src="images/icon-plus.svg" alt=""></div>
+            </div>
+            <button class="page-flex add-to-cart">
+              <img src="images/icon-cart.svg" alt="">
+              Add to cart
+            </button>
+            <div class="loader"></div>
+          </div>
+
+        </section>
+      </section>
+    </div>
+  </div>
+</body>
+<script defer src="script.js"></script>
+</html>
