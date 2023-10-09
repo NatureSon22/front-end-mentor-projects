@@ -1,0 +1,99 @@
+.img-effect {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsla(220, 13%, 13%, 0.8);
+    position: fixed;
+    top: 0;
+    place-items: center;
+    z-index: 1;
+}
+
+.img-effect.toggle {
+    display: grid;
+}
+
+
+.img-effect__container {
+    height: 100%;
+    width: min(80%, 40em);
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-block: 4em;
+}
+
+.img-effect__container > i {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1em;
+    align-self: flex-end;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: background-color 0.18s;
+}
+
+.img-effect__container > i:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.img-effect__main-img {
+    width: 100%;
+    height: 35em;
+    position: relative;    
+}
+
+.img-effect__main-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-effect__main-img div {
+    width: 3.5em;
+    height: 3.5em;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.img-effect__main-img div:nth-child(2) {
+    left: 0;
+    transform: translateX(-1.5em);
+}
+
+.img-effect__main-img div:nth-child(3) {
+    right: 0;
+    transform: translateX(1.5em);
+}
+
+.img-effect__main-list {
+    padding-inline: 3em;
+    gap: 1.5em;
+}
+
+.img-effect__main-list div {
+    position: relative;
+}
+
+.img-effect__main-list img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img-effect__main-list > div.toggle::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 10px;
+    border: 4px solid var(--clr-primary-100);
+    position: absolute;
+    top: 0;
+}
