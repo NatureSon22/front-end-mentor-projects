@@ -1,0 +1,256 @@
+:root {
+    --primary-100: hsl(10, 79%, 65%);
+    --primary-200: hsl(186, 34%, 60%);
+
+    --neutral-100: hsl(25, 47%, 15%);
+    --neutral-200: hsl(28, 10%, 53%);
+    --neutral-300: hsl(27, 66%, 92%);
+    --neutral-400: hsl(33, 100%, 98%);
+
+    --ff-main: 'DM Sans', sans-serif;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--ff-main);
+    font-size: 1em;
+    background-color: var(--neutral-300);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: min(90%, 40em);
+}
+
+.balance {
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
+    color: var(--neutral-400);
+    background-color: var(--primary-100);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance-info p:nth-child(1) {
+    margin-bottom: 0.2em;
+}
+
+.balance-info p:nth-child(2) {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.balance-graph {
+    padding: 2em;
+    background-color: var(--neutral-400);
+    border-radius: 10px;
+}
+
+.balance-graph > p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--neutral-100);
+}
+
+.balance-graphic {
+    height: 15em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: end;
+    gap: 0.7em;
+}
+
+.bar-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.2em;   
+}
+
+.bar {
+    height: 100%;
+    background-color: var(--primary-100);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transform: opacity 0.18s;
+}
+
+.bar::before {
+    font-size: 0.7rem;
+    padding: 0.4em;
+    color: var(--neutral-300);
+    font-weight: 700;
+    background-color: var(--neutral-100);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -2.5em);
+}
+
+.bar-container:nth-of-type(1) > .bar {
+    height: 17.45%;
+
+    &::before {
+        content: "$17.45";
+    }
+
+    .bar {
+        height: 17.45%;
+    }
+}
+
+.bar-container:nth-of-type(2) > .bar {
+    height: 34.91%; 
+
+    &::before {
+        content: "$34.91";
+    }
+}
+
+.bar-container:nth-of-type(3) > .bar {
+    height: 52.36%;
+    background-color: var(--primary-200);
+
+    &::before {
+        content: "$52.36";
+    }
+}
+
+.bar-container:nth-of-type(4) > .bar {
+    height: 31.07%;
+
+    &::before {
+        content: "$31.07";
+    }
+}
+
+.bar-container:nth-of-type(5) > .bar {
+    height: 23.39%;
+
+    &::before {
+        content: "$23.39";
+    }
+}
+
+.bar-container:nth-of-type(6) > .bar {
+    height: 43.28%;
+
+    &::before {
+        content: "$43.28";
+    }
+}
+
+.bar-container:nth-of-type(7) > .bar {
+    height: 25.48%;
+
+    &::before {
+        content: "$25.48";
+    }
+}
+
+.bar:hover {
+    opacity: 0.7;
+
+    &::before {
+        opacity: 1;
+    }
+}
+
+.bar-container p {
+    text-align: center;
+    color: var(--neutral-200);
+    font-size: 0.8rem;
+}
+
+.balance-total {
+    padding-top: 2em;
+    border-top: 3px solid var(--neutral-300);
+}
+
+.balance-total > p {
+    color: var(--neutral-200);
+    margin-bottom: 0.2em;
+}
+
+.balance-total-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance-total-info > p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--neutral-100);
+}
+
+.balance-total-info div p:nth-of-type(1) {
+    width: min-content;
+    font-weight: 700;
+    margin-left: auto;
+    color: var(--neutral-100);
+}
+
+.balance-total-info div p:nth-of-type(2) {
+    color: var(--neutral-200);
+}
+
+@media (min-width: 500px) {
+    .bar-container p {
+        margin-top: 0.3em;
+        font-size: 1.25rem;
+    }
+
+    .bar::before {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .balance-info p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    .balance-info p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .balance-graph > p {
+        font-size: 2rem;
+    }
+
+    .bar::before {
+        font-size: 1.2rem;
+    }
+
+    .balance-total > p {
+        font-size: 1.1rem;
+    }
+
+    .balance-total-info > p {
+        font-size: 2rem;
+    }
+
+    .balance-total-info div {
+        font-size: 1.1rem;
+    }
+
+}
